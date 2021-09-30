@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="837ed6f1-dc05-4f7d-a9ae-11a49f21e704">
+		<Properties>
+			<Name>воВходящиеОчереди</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Во входящие очереди</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воВходящиеОчередиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воВходящиеОчередиПовтИспВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воРаботаСКонстантамиПолныеПраваВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воОбщегоНазначенияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воФункцииРаботыXMLВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воФункцииРаботыJSONВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воФункцииРаботыFastInfosetВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.воОбщегоНазначенияСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.воФормаКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.воНастройкиПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воИспользоватьВнутреннююОчередь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воДлительностьХраненияВходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воДлительностьХраненияВходящихСообщенийПоОчередямИСостояниям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воКоличествоЗарезервированныхПотоковОбработкиОчередей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воКоличествоПотоковБалансировкиНагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воКоличествоПотоковОбработкиОчередей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воКоличествоПотоковОбработкиПриоритетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воМаксимальноеЧислоОткладыванияСообщенийВ1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.воВходящиеВнутренниеОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.воСистемыИнтеграционногоКонтура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.воСтатусыСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.воФорматыСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.воСборСтатистикиОбработкиСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.воКонсольЗаданийESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.воОчередьВходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.воСостояниеВходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.воСтатистикаВнутреннихОчередей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воФорматСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.воЗапускОбработкиЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.воМаксимальноеКоличествоВыбираемыхСообщений</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
