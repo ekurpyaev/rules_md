@@ -26,4 +26,4 @@
  КонецЕсли;
 ```
 
-Пример использования ["Пример обработчика Datareon ESB"](rules_md/integration/adrequest/ПримерВходящегоОбработчика.bsl).
+Пример использования ["Пример обработчика Datareon ESB"](./rules_md/integration/adrequest/ПримерВходящегоОбработчика.bsl).
