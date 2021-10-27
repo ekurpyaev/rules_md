@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="973e710a-ec04-445f-9f75-eed3db6e1f16">
+		<Name>ГотовКОтгрузке</Name>
+		<Code>000000001</Code>
+		<Description>Готов к отгрузке</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ae7307fd-025a-44ba-a1fe-e80bdb97836f">
+		<Name>ЗаказРазмещен</Name>
+		<Code>000000002</Code>
+		<Description>Заказ размещен</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="df401759-42e7-4c8f-9820-21b34089f4a2">
+		<Name>НаПутиВМоскву</Name>
+		<Code>000000003</Code>
+		<Description>На пути в москву</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="64e00283-f1d3-44a0-9f09-6b872a17e5a1">
+		<Name>НаПутиВРигу</Name>
+		<Code>000000004</Code>
+		<Description>На пути в ригу</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="da12f7ff-c361-4704-a8e6-cabc6270583d">
+		<Name>Отгружается</Name>
+		<Code>000000005</Code>
+		<Description>Отгружается</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7d05be0e-a893-4ec3-8fa5-0c2efb02d95a">
+		<Name>Рига</Name>
+		<Code>000000006</Code>
+		<Description>Рига</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="edd0406e-ca6b-4bf2-bb26-ffc4829774a6">
+		<Name>СВХ</Name>
+		<Code>000000007</Code>
+		<Description>СВХ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

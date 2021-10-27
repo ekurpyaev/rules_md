@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ДанныеСтатистикиESB</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлассСообщения</dataPath>
+			<field>КлассСообщения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРегистрации</dataPath>
+			<field>ДатаРегистрации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаИзменения</dataPath>
+			<field>ДатаИзменения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусСообщения</dataPath>
+			<field>СтатусСообщения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторСообщения</dataPath>
+			<field>ИдентификаторСообщения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСоздания</dataPath>
+			<field>ДатаСоздания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Очередь</dataPath>
+			<field>Очередь</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлинаСообщенияКБ</dataPath>
+			<field>ДлинаСообщенияКБ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длина сообщения КБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОчередьВходящихСообщений.КлассСообщения КАК КлассСообщения,
+	ОчередьВходящихСообщений.ИдентификаторСообщения КАК ИдентификаторСообщения,
+	СостояниеВходящихСообщений.ДатаИзменения КАК ДатаИзменения,
+	ОчередьВходящихСообщений.ДатаРегистрации КАК ДатаРегистрации,
+	СостояниеВходящихСообщений.СтатусСообщения КАК СтатусСообщения,
+	ОчередьВходящихСообщений.ДатаСоздания КАК ДатаСоздания,
+	ОчередьВходящихСообщений.Очередь КАК Очередь,
+	ОчередьВходящихСообщений.ДлинаСообщения / 1000 КАК ДлинаСообщенияКБ
+ИЗ
+	РегистрСведений.грОчередьВходящихСообщений КАК ОчередьВходящихСообщений
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.грСостояниеВходящихСообщений КАК СостояниеВходящихСообщений
+		ПО ОчередьВходящихСообщений.ИдентификаторСообщения = СостояниеВходящихСообщений.ИдентификаторСообщения
+{ГДЕ
+	ОчередьВходящихСообщений.ДатаРегистрации,
+	СостояниеВходящихСообщений.ДатаИзменения}</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ВремяИсполнения</dataPath>
+		<expression>РАЗНОСТЬДАТ ( ДатаРегистрации, ДатаИзменения, "Секунда") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время исполнения, сек (  Avg )</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВремяИсполненияМин</dataPath>
+		<expression>РАЗНОСТЬДАТ (  ДатаРегистрации, ДатаИзменения,"Секунда") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время исполнения, сек  ( Min )</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВремяИсполненияМакс</dataPath>
+		<expression>РАЗНОСТЬДАТ (  ДатаРегистрации, ДатаИзменения,"Секунда") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время исполнения, сек ( Max )</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВремяДоставки</dataPath>
+		<expression>РАЗНОСТЬДАТ ( ДатаСоздания, ДатаРегистрации, "Секунда") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время доставки, сек (  Avg )</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВремяДоставкиМин</dataPath>
+		<expression>РАЗНОСТЬДАТ ( ДатаСоздания, ДатаРегистрации, "Секунда") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время доставки, сек ( Min )</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ВремяДоставкиМакс</dataPath>
+		<expression>РАЗНОСТЬДАТ ( ДатаСоздания, ДатаРегистрации, "Секунда") </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время доставки, сек ( Max )</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>РазмерПакета</dataPath>
+		<expression>ВЫБОР 
+	КОГДА ДлинаСообщенияКБ  &gt;= 0
+			И ДлинаСообщенияКБ  &lt;= 50 Тогда "0 - 50"
+	КОГДА ДлинаСообщенияКБ  &gt; 50
+			И ДлинаСообщенияКБ  &lt;= 100
+		ТОГДА "50-100"		
+	КОГДА ДлинаСообщенияКБ  &gt; 100
+			И ДлинаСообщенияКБ  &lt;= 500
+		ТОГДА "100-500"
+	КОГДА ДлинаСообщенияКБ &gt; 500
+			И ДлинаСообщенияКБ  &lt;= 1000
+		ТОГДА "500-1000"	
+		КОГДА ДлинаСообщенияКБ  &gt; 1000
+			И ДлинаСообщенияКБ  &lt;= 5000
+		ТОГДА "1000-5000"	
+			КОГДА ДлинаСообщенияКБ &gt; 5000
+		ТОГДА "&gt;5000"		
+КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Размер пакета ( КБ )</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ИдентификаторСообщения</dataPath>
+		<expression>Количество(Различные ИдентификаторСообщения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяИсполнения</dataPath>
+		<expression>Среднее(ВремяИсполнения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяИсполненияМакс</dataPath>
+		<expression>Максимум(ВремяИсполненияМакс)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяИсполненияМин</dataPath>
+		<expression>Минимум(ВремяИсполненияМин)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяДоставки</dataPath>
+		<expression>Среднее(ВремяДоставки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяДоставкиМакс</dataPath>
+		<expression>Максимум(ВремяДоставкиМакс)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяДоставкиМин</dataPath>
+		<expression>Минимум(ВремяДоставкиМин)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>грСборСтатистикаОбработкиСообщенийESB</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сбор статистика обработки сообщений ESB</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Очередь</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлассСообщения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатусСообщения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИдентификаторСообщения</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КоличествоСообщений</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяИсполнения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяИсполненияМин</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяИсполненияМакс</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяДоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяДоставкиМин</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяДоставкиМакс</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Очередь</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КлассСообщения</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Очередь</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>КлассСообщения</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>СтатусСообщения</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

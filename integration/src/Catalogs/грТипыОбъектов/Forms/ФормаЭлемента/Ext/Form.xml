@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ОбновитьИзESB" id="7">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьИзESB</CommandName>
+				<ExtendedTooltip name="ОбновитьИзESBРасширеннаяПодсказка" id="8"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Страницы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Page name="Основное" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<CheckBoxField name="Включен" id="15">
+							<DataPath>Объект.Включен</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключенКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ВключенРасширеннаяПодсказка" id="17"/>
+						</CheckBoxField>
+						<TextDocumentField name="АлгоритмОбработки" id="4">
+							<DataPath>Объект.АлгоритмОбработки</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АлгоритмОбработкиКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="АлгоритмОбработкиРасширеннаяПодсказка" id="6"/>
+						</TextDocumentField>
+						<InputField name="Наименование" id="1">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ТехническаяИнформация" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническая информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Техническая информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТехническаяИнформацияРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<LabelField name="ИдентификаторШаблона" id="18">
+							<DataPath>Объект.ИдентификаторШаблона</DataPath>
+							<ContextMenu name="ИдентификаторШаблонаКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ИдентификаторШаблонаРасширеннаяПодсказка" id="20"/>
+						</LabelField>
+						<InputField name="Версия" id="21">
+							<DataPath>Объект.Версия</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ВерсияКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="23"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.грТипыОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьИзESB" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из ESB</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить из ESB</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьИзESB</Action>
+		</Command>
+	</Commands>
+</Form>

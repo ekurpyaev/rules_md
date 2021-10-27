@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="d28f5667-8bcd-432d-ac11-38881c9a11d5">
+		<Name>MDKey</Name>
+		<Code/>
+		<Description>MDKey</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="71790c45-15c9-44c3-a5ef-e6805dfd1f66">
+		<Name>UnicumKey</Name>
+		<Code/>
+		<Description>Unicum key</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cd3f6957-f361-400c-908a-cb5ca430c570">
+		<Name>КлючОбъектаИзменения</Name>
+		<Code/>
+		<Description>Ключ объекта изменения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ecb14de9-9086-4a5b-89a5-82dd984368c7">
+		<Name>КодУникум</Name>
+		<Code/>
+		<Description>Код уникум</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

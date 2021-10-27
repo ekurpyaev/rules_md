@@ -1,0 +1,33 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+	<property name="QName" type="xs:QName" nillable="true"/>
+	<property name="anyType" nillable="true"/>
+	<property name="anyURI" type="xs:anyURI" nillable="true"/>
+	<property name="base64Binary" type="xs:base64Binary" nillable="true"/>
+	<property name="boolean" type="xs:boolean" nillable="true"/>
+	<property name="byte" type="xs:byte" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/" name="char" type="d2p1:char" nillable="true"/>
+	<property name="dateTime" type="xs:dateTime" nillable="true"/>
+	<property name="decimal" type="xs:decimal" nillable="true"/>
+	<property name="double" type="xs:double" nillable="true"/>
+	<property name="duration" type="xs:duration" nillable="true"/>
+	<property name="float" type="xs:float" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/" name="guid" type="d2p1:guid" nillable="true"/>
+	<property name="int" type="xs:int" nillable="true"/>
+	<property name="long" type="xs:long" nillable="true"/>
+	<property name="short" type="xs:short" nillable="true"/>
+	<property name="string" type="xs:string" nillable="true"/>
+	<property name="unsignedByte" type="xs:unsignedByte" nillable="true"/>
+	<property name="unsignedInt" type="xs:unsignedInt" nillable="true"/>
+	<property name="unsignedLong" type="xs:unsignedLong" nillable="true"/>
+	<property name="unsignedShort" type="xs:unsignedShort" nillable="true"/>
+	<property name="FactoryType" type="xs:QName" form="Attribute"/>
+	<property name="Id" type="xs:ID" form="Attribute"/>
+	<property name="Ref" type="xs:IDREF" form="Attribute"/>
+	<valueType name="char" base="xs:int" variety="Atomic"/>
+	<valueType name="duration" base="xs:duration" variety="Atomic" minInclusive="-P10675199DT2H48M5.4775808S" maxInclusive="P10675199DT2H48M5.4775807S">
+		<pattern>\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?</pattern>
+	</valueType>
+	<valueType name="guid" base="xs:string" variety="Atomic">
+		<pattern>[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}</pattern>
+	</valueType>
+</package>

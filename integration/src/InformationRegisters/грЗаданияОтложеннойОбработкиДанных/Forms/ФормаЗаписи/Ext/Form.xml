@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>ChangeHistory</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelField name="Задание" id="1">
+			<DataPath>Запись.Задание</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ЗаданиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЗаданиеРасширеннаяПодсказка" id="3"/>
+		</LabelField>
+		<LabelField name="Процесс" id="4">
+			<DataPath>Запись.Процесс</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПроцессКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПроцессРасширеннаяПодсказка" id="6"/>
+		</LabelField>
+		<CheckBoxField name="Выполнено" id="7">
+			<DataPath>Запись.Выполнено</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыполненоКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ВыполненоРасширеннаяПодсказка" id="9"/>
+		</CheckBoxField>
+		<CheckBoxField name="Запущено" id="16">
+			<DataPath>Запись.Запущено</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапущеноКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЗапущеноРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<InputField name="ДатаОбновления" id="10">
+			<DataPath>Запись.ДатаОбновления</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ДатаОбновленияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДатаОбновленияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Процедура" id="22">
+			<DataPath>Запись.Процедура</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПроцедураКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПроцедураРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Описание" id="13">
+			<DataPath>Запись.Описание</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Результат" id="19">
+			<DataPath>Запись.Результат</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="РезультатКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.грЗаданияОтложеннойОбработкиДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

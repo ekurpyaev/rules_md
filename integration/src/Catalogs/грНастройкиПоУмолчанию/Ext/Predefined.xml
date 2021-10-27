@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="863a1094-a7bf-4157-a9c8-01180014c710">
+		<Name>ВидыЦен</Name>
+		<Code>000000018</Code>
+		<Description>Виды цен</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="a8e1b767-ea96-40e0-a5af-13e3d6b56791">
+				<Name>ГруппаЦенТВ</Name>
+				<Code>000000061</Code>
+				<Description>Группа цен ТВ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c4ba3f8d-2e0f-4b97-8590-5f703312b17a">
+				<Name>МРЦ</Name>
+				<Code>000000038</Code>
+				<Description>Минимальная розничная цена</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="59e932c8-1bc5-48c7-9e62-25a21520da15">
+				<Name>МЦЗД</Name>
+				<Code>000000039</Code>
+				<Description>Минимальная цена закупки у дистрибьютера</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6d16734a-33c1-4b83-b62f-ca56559498cd">
+				<Name>ТаможеннаяЦена</Name>
+				<Code>000000020</Code>
+				<Description>Таможенная цена</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="0a7b340a-63ba-4b12-87d6-3e0047cf0999">
+				<Name>УправленческаяЦена</Name>
+				<Code>000000021</Code>
+				<Description>Управленческая цена</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1af00358-fdc6-4165-92f3-5cc9c8c4710a">
+				<Name>ВидЦенКлиентскогоСервиса</Name>
+				<Code>000000063</Code>
+				<Description>Цена клиентского сервиса</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1c6b6d21-a5f6-4d55-bc56-56aed980ac0c">
+				<Name>ЦенаПоставщика</Name>
+				<Code>000000019</Code>
+				<Description>Цена поставщика</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="499265e9-a74c-4e3b-b279-585ee289cbc1">
+		<Name>Интеграция</Name>
+		<Code>000000059</Code>
+		<Description>Интеграция</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="fcf033aa-59b1-43ff-b62d-815b768dc171">
+				<Name>ЗагрузкаОперативныхЦен</Name>
+				<Code>000000068</Code>
+				<Description>Загрузка оперативных цен</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="281c61be-33ad-4796-890c-6b5930eeb180">
+				<Name>ПрефиксОбработчиковСборки</Name>
+				<Code>000000060</Code>
+				<Description>Префикс обработчиков сборки</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="316e9a92-4a75-4d7a-9fea-c488a1e70c25">
+		<Name>УниверсальнаяСтроковаяМодель</Name>
+		<Code>000000074</Code>
+		<Description>Универсальная строковая модель</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="eb3fcb53-9d3f-4981-aa8c-e5729cdb3ea9">
+				<Name>АРМ</Name>
+				<Code>000000099</Code>
+				<Description>АРМ</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="cf904741-cebd-445b-bdd1-6d51e8434c77">
+						<Name>ПланированиеРНД</Name>
+						<Code>000000100</Code>
+						<Description>Планирование РНД</Description>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="c17574ab-8d17-420c-b324-0c98d567b09f">
+								<Name>ВидыПоказателяАРМПланированиеРНДПланУточненный</Name>
+								<Code>000000101</Code>
+								<Description>Вид показателя АРМ (Планирование РНД - План уточненный)</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="60d3099e-ed7e-4c6c-bf03-bbf0809d796d">
+								<Name>ВидыПоказателяАРМПланированиеРНДПлан</Name>
+								<Code>000000098</Code>
+								<Description>Вид показателя АРМ (Планирование РНД - План)</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="a1a608d5-268c-4e8f-8bc0-d0ca56e5bd3f">
+								<Name>ВидыПоказателяАРМПланированиеРНДРНД</Name>
+								<Code>000000102</Code>
+								<Description>Вид показателя АРМ (Планирование РНД - РНД)</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="6588c14c-54f6-4bf9-9559-f7e8a3aa6780">
+				<Name>ВводНаОсновании</Name>
+				<Code>000000097</Code>
+				<Description>Ввод на основании</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="9e9f5c19-d9cc-45d9-80c0-6d9bd9c412ca">
+						<Name>ВидОперацииЗНП</Name>
+						<Code>000000077</Code>
+						<Description>Вид операции ЗНП</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4703419a-4484-416a-9b37-725b724681b3">
+						<Name>ВидОперацииПеремещениеОтгружено</Name>
+						<Code>000000083</Code>
+						<Description>Вид операции Перемещение (Отгружено)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="de47cbd6-7102-4ff3-b371-83ee5a4becec">
+						<Name>ВидОперацииПеремещениеПринято</Name>
+						<Code>000000086</Code>
+						<Description>Вид операции Перемещение (Принято)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="40bf7f21-2dbd-4962-bea7-c946c0127945">
+						<Name>ВидОперацииПланВывоза</Name>
+						<Code>000000095</Code>
+						<Description>Вид операции План вывоза</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="e09916e6-233a-4e8b-b23a-cf7923b6acf6">
+						<Name>ВидОперацииПТУ</Name>
+						<Code>000000087</Code>
+						<Description>Вид операции ПТУ</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1755482f-f9b8-486d-9044-7e5ad9815080">
+						<Name>ВидОперацииРНД</Name>
+						<Code>000000080</Code>
+						<Description>Вид операции РНД</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="542e386b-928b-499b-98cf-ea523906cd3c">
+						<Name>ВидПоказателяИзЗНПвПеремещениеДополнительныйОтгружено</Name>
+						<Code>000000082</Code>
+						<Description>Вид показателя (из ЗНП (Отгружено) в Перемещение - дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7b9e1019-5173-4775-b528-b2a85f81d534">
+						<Name>ВидПоказателяИзЗНПвПеремещениеОсновнойОтгружено</Name>
+						<Code>000000081</Code>
+						<Description>Вид показателя (из ЗНП (Отгружено) в Перемещение - основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="e4c51449-6731-45ce-a067-d679f32a80cf">
+						<Name>ВидПоказателяИзЗНПвПеремещениеДополнительныйПринято</Name>
+						<Code>000000085</Code>
+						<Description>Вид показателя (из ЗНП (Принято) в Перемещение - дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="897c62f9-5e0e-4e92-87e4-aa00241b3d50">
+						<Name>ВидПоказателяИзЗНПвПеремещениеОсновнойПринято</Name>
+						<Code>000000084</Code>
+						<Description>Вид показателя (из ЗНП (Принято) в Перемещение - основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a5d6c30e-5539-47d8-9d8a-08c0d29b1c57">
+						<Name>ВидПоказателяИзЗНПвПТУДообогащение</Name>
+						<Code>000000090</Code>
+						<Description>Вид показателя (из ЗНП в ПТУ - дообогащение)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="1d1af20e-a4dc-444f-940e-54335b1d0efd">
+						<Name>ВидПоказателяИзЗНПвПТУДополнительный</Name>
+						<Code>000000089</Code>
+						<Description>Вид показателя (из ЗНП в ПТУ - дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a19f500e-43b3-4b62-b03c-fe5556385a16">
+						<Name>ВидПоказателяИзЗНПвПТУОсновной</Name>
+						<Code>000000088</Code>
+						<Description>Вид показателя (из ЗНП в ПТУ - основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="bb99672a-c431-4d13-aedf-c2a44993885e">
+						<Name>ВидПоказателяИзЗНПвРНДДополнительный</Name>
+						<Code>000000079</Code>
+						<Description>Вид показателя (из ЗНП в РНД - дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d41d39fa-2402-4560-87c1-7c5452276c24">
+						<Name>ВидПоказателяИзЗНПвРНДОсновной</Name>
+						<Code>000000078</Code>
+						<Description>Вид показателя (из ЗНП в РНД - основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="0a7f017d-31c5-4ab4-9666-847b15a6dd31">
+						<Name>ВидПоказателяИзЗПвЗаказАМ</Name>
+						<Code>000000114</Code>
+						<Description>Вид показателя (из ЗП в Заказ АМ)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="51dc9f59-0ed3-47c1-a973-fcaad24690de">
+						<Name>ВидПоказателяИзЗПвЗНПДополнительный</Name>
+						<Code>000000076</Code>
+						<Description>Вид показателя (из ЗП в ЗНП - дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="7c6277e8-80bf-4465-ae31-db6d3966fe30">
+						<Name>ВидПоказателяИзЗПвЗНПОсновной</Name>
+						<Code>000000075</Code>
+						<Description>Вид показателя (из ЗП в ЗНП - основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a2544be5-3cbc-4b22-8692-bff009f77131">
+						<Name>ВидПоказателяИзЗПвПланВывозаДополнительный</Name>
+						<Code>000000094</Code>
+						<Description>Вид показателя (из ЗП в План вывоза - дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="d4dfcb91-615b-4217-9816-734fd13dd5cf">
+						<Name>ВидПоказателяИзЗПвПланВывозаОсновной</Name>
+						<Code>000000093</Code>
+						<Description>Вид показателя (из ЗП в План вывоза - основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="53ec05d9-49b0-4897-8fc9-80dd88d85500">
+				<Name>ИтогиСписков</Name>
+				<Code>000000112</Code>
+				<Description>Итоги списков</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="d2338736-7127-4b7b-9544-909618628b6d">
+						<Name>ВидПоказателяИтогСпискаЗаказПоставщику</Name>
+						<Code>000000113</Code>
+						<Description>Вид показателя итог списка (Заказ поставщику)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="26facf11-721e-4e6a-9cce-26309ad7f806">
+				<Name>Конвертация</Name>
+				<Code>000000107</Code>
+				<Description>Конвертация</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="fe07de75-8716-4457-a490-763de233327c">
+						<Name>ВидОперацииКонвертацияЗП</Name>
+						<Code>000000108</Code>
+						<Description>Вид операции Конвертация (Заказ поставщику)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="bcb3447f-d49a-41b2-902b-0b0347794408">
+						<Name>ВидПоказателяКонвертацияЗППотребностьВПроизводстве</Name>
+						<Code>000000110</Code>
+						<Description>Вид показателя Конвертация (Заказ поставщику - Потребность в производстве)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="378326d3-5a65-4894-aeab-d331f65cddda">
+						<Name>ВидПоказателяКонвертацияЗППроизведенныйТовар</Name>
+						<Code>000000109</Code>
+						<Description>Вид показателя Конвертация (Заказ поставщику - Произведенный товар)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="b3e64b4d-13a3-47cc-b42d-d2893c6d63e4">
+				<Name>ТоварнаяЛогистика</Name>
+				<Code>000000105</Code>
+				<Description>Товарная логистика</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="362d5ece-a618-45c0-b8ae-e7ea6db3da8d">
+						<Name>ВидОперацииЗаказПоставщикуИзТЛ</Name>
+						<Code>000000106</Code>
+						<Description>Вид операции Заказ поставщику (при загрузке из товарной логистики)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="8a4aba6f-15ce-4037-8066-a088fbea6242">
+						<Name>ВидПоказателяЗаказПоставщикуВыгрузкаКорректировки</Name>
+						<Code>000000111</Code>
+						<Description>Вид показателя Заказ поставщику (при выгрузке корректировки)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="15a7dccd-70c7-406f-8e51-00bc7ecae370">
+				<Name>ВидОперацииДляИнтерактивногоСозданияЗП</Name>
+				<Code>000000116</Code>
+				<Description>Вид операции для интерактивного создания ЗП</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="e9542fae-6ffb-4171-bf42-8adc13755606">
+				<Name>ВидПоказателяПроизведенныйТовар</Name>
+				<Code>000000092</Code>
+				<Description>Вид показателя (Произведенный товар)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="00141ecb-5987-49a4-a9d0-c6e954ef1113">
+				<Name>ВидПоказателяУточненнаяПотребностьВВывозе</Name>
+				<Code>000000096</Code>
+				<Description>Вид показателя (Уточненная потребность в вывозе)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d0d1ca8d-de63-4bcf-9b98-3e94e2586945">
+				<Name>ИменаВладельцевУниверсальнойСтроки</Name>
+				<Code>000000104</Code>
+				<Description>Владельцы универсальной строки (Список полных имен объектов метаданных)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="0eb9342b-cc44-4ed1-9052-9f63d8b4c1ff">
+		<Name>Услуги</Name>
+		<Code>000000022</Code>
+		<Description>Услуги</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="cae9dd68-b0e5-48e4-a12a-9519df6abdac">
+				<Name>УслугаОклейкаАМ</Name>
+				<Code>000000023</Code>
+				<Description>Оклейка АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a0c6036b-0a6f-4f0b-84f7-0d0adb20af32">
+				<Name>УслугаОклейкаКонтрэтикетками</Name>
+				<Code>000000024</Code>
+				<Description>Оклейка контрэтикетками</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6fad5f77-537b-4e53-a2ce-3649d809253a">
+				<Name>УслугаОклейкаСтикерами</Name>
+				<Code>000000025</Code>
+				<Description>Оклейка стикерами</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="d0ed7c2d-d171-42b3-9926-6fd4d407ab1f">
+		<Name>УчетАМ</Name>
+		<Code>000000008</Code>
+		<Description>Учет АМ</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="5ab7c26a-8a5f-4218-b4b8-02f6951fb976">
+				<Name>БизнесПартнерОРАМ</Name>
+				<Code>000000053</Code>
+				<Description>Бизнес партнер ОРАМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="f1878a11-0a5c-4d1f-a15d-13d2f2e3eebf">
+				<Name>ВидЦеныАМ</Name>
+				<Code>000000027</Code>
+				<Description>Вид цены АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2d614841-3c69-4ab9-ae0a-c133f81d50d7">
+				<Name>ДоговорЦАТ</Name>
+				<Code>000000016</Code>
+				<Description>Договор ЦАТ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2ce70a8e-e895-4ed3-b104-9129aa5a4006">
+				<Name>ЕдиницаИзмеренияДляЦенообразования</Name>
+				<Code>000000031</Code>
+				<Description>Единица измерения для ценообразования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="a5f7769c-fff5-4bee-ad47-9386f4ba6a06">
+				<Name>КонтрагентыДляОплатыАМ</Name>
+				<Code>000000014</Code>
+				<Description>КонтрагентыДляОплатыАМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c4782a96-e3d5-4267-bb9e-140837932364">
+				<Name>ЛимитСтрахования</Name>
+				<Code>000000065</Code>
+				<Description>Лимит страхования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5ccb3c51-702f-4153-b959-1bb6a4cf43c7">
+				<Name>ОсновнойСкладАМ</Name>
+				<Code>000000009</Code>
+				<Description>Основной склад АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4b7c1ebf-5f90-462e-95ad-b7a764c6ff5e">
+				<Name>ПартнерЦАТ</Name>
+				<Code>000000015</Code>
+				<Description>Партнер ЦАТ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="7253b876-e103-41e1-8f49-5dd08615fdf4">
+				<Name>ПодключениеКХам</Name>
+				<Code>000000017</Code>
+				<Description>Подключение к ХАМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="23d32770-1904-4797-86fa-74c14236d0b6">
+				<Name>ПунктОтправления</Name>
+				<Code>000000055</Code>
+				<Description>Пункт отправления</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9e894e3f-1544-476e-ae6e-b6a555602fbb">
+				<Name>ПутьСохраненияПЗ_МаркаИмпортер</Name>
+				<Code>000000032</Code>
+				<Description>Путь сохранения ПЗ Марка-Импортер</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="170c77e5-ef6d-400d-a7f2-f72954713419">
+				<Name>РасположениеТранзитныхСкладов</Name>
+				<Code>000000012</Code>
+				<Description>Расположение транзитных складов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="155e690c-1245-49fe-b64a-9849745e2588">
+				<Name>СкладВПутиПередФиксациейВвоза</Name>
+				<Code>000000051</Code>
+				<Description>Склад в пути перед фиксацией ввоза</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="24c5a5c6-a9e4-49b4-b887-4d07e17cd0dd">
+				<Name>СкладНаклееныхАМ</Name>
+				<Code>000000010</Code>
+				<Description>Склад наклееных АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="ba9e4404-7115-4aa9-b152-7ea6b54b668d">
+				<Name>СкладСВХ</Name>
+				<Code>000000103</Code>
+				<Description>Склад СВХ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5606b23d-6a66-4c9f-bcbc-9fe57196e225">
+				<Name>СкладФиксацииВвоза</Name>
+				<Code>000000011</Code>
+				<Description>Склад фиксации ввоза</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b034664b-eced-4d20-98b9-a771a50d225d">
+				<Name>СкладыАМ</Name>
+				<Code>000000033</Code>
+				<Description>Склады АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="3ddff465-baba-4975-9c54-6b090839f401">
+				<Name>СуммаЗаБрокерскиеУслуги</Name>
+				<Code>000000066</Code>
+				<Description>Сумма за брокерские услуги</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="4952d1ce-fba4-4bd4-a1d0-5c947d2ac1be">
+				<Name>ШаблонНомераМарочногоЗаявления</Name>
+				<Code>000000013</Code>
+				<Description>Текущий шаблон номера марочного заявления</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d2939289-c721-46ea-b6f6-39bca57b9e18">
+				<Name>ТехническаяАМ</Name>
+				<Code>000000030</Code>
+				<Description>Техническая АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="6e24726e-7179-4024-be52-7837629adc70">
+				<Name>ТНВЭДАМ</Name>
+				<Code>000000054</Code>
+				<Description>ТНВЭД АМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="b745be24-c8e3-4a6a-8b5c-2e27f6249a03">
+				<Name>ШаблонНомераЗаявкиЕгаисИмпортер</Name>
+				<Code>000000056</Code>
+				<Description>Шаблон номера заявки егаис импортер</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="5672de23-5872-491b-842c-161e03ca4444">
+				<Name>ШаблоныНомеровМарочногоЗаявления</Name>
+				<Code>000000052</Code>
+				<Description>Шаблоны номеров марочного заявления</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="edfa39c7-8e93-4084-acc4-c86e568378c9">
+		<Name>АдресСкладаКрекшино</Name>
+		<Code>000000004</Code>
+		<Description>Адрес склада Крекшино</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="530c0912-aec7-48eb-b113-134dec3a8ea0">
+		<Name>АкцияДляПрограммыЛояльности</Name>
+		<Code>000000044</Code>
+		<Description>Акция для программы лояльности</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="064680cf-d236-47e0-93eb-d0b74496d6e7">
+		<Name>БизнесРегионМиМО</Name>
+		<Code>000000057</Code>
+		<Description>Бизнес регион МиМО</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="381dbec8-e716-44cf-8099-04bb9d8d0d9a">
+		<Name>БизнесРегионМосква</Name>
+		<Code>000000040</Code>
+		<Description>Бизнес-регион Москва</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3162e5ea-f8b3-4d39-a106-59488e00b08f">
+		<Name>ВыполнятьРасчётЦенВоВнешнемПроцессинге</Name>
+		<Code>000000062</Code>
+		<Description>Выполнять расчёт цен во внешнем процессинге</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="627b4c5b-cef8-49fc-a9b8-d36fefd0f0e1">
+		<Name>ДепартаментУправленияИнтернетВитриной</Name>
+		<Code>000000006</Code>
+		<Description>Департамент управления интернет-витриной</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e2479011-82a8-484a-97b4-08aacf89a7d0">
+		<Name>ЗакрытиеФилиальныхИнтересовИсторическойРеализацией</Name>
+		<Code>000000058</Code>
+		<Description>Закрытие филиальных интересов исторической реализацией</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="466eab72-5286-4004-9c0e-825dfed0425b">
+		<Name>КодыКлиентовРезерваКС</Name>
+		<Code>000000073</Code>
+		<Description>Коды клиентов резерва КС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fed2552e-fa5a-474f-903f-3d9607360c41">
+		<Name>КомментарийКУпаковкеПоУмолчаниюДляИнтереса</Name>
+		<Code>000000007</Code>
+		<Description>Комментарий к упаковке по умолчанию для Интереса</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="86397019-1d16-4117-a1ae-9cc8f75fc2fc">
+		<Name>МенеджерДУИВСпоУмолчанию</Name>
+		<Code>000000048</Code>
+		<Description>Менеджер ДУИВС по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="489448ce-1379-4713-a94d-eefa7728fcf8">
+		<Name>НастройкаХраненияИсторииИзмененияДокументов</Name>
+		<Code>000000050</Code>
+		<Description>Настройка хранения истории изменения документов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2d3349e9-c1b9-49ca-a99b-57e7924cb26a">
+		<Name>НастройкаХраненияПрисоединенныхФайловЕГАИС</Name>
+		<Code>000000001</Code>
+		<Description>Настройка хранения присоединенных файлов ЕГАИС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38305901-7bce-404b-9890-36afcb5ec38c">
+		<Name>НастройкаХраненияСкановСправка2ЕГАИСизУникума</Name>
+		<Code>000000002</Code>
+		<Description>Настройка хранения сканов Справка2ЕГАИС из Уникума</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4bc801a3-fe13-4e3b-a582-431eb043daba">
+		<Name>НастройкаХраненияФотогрфийКонтактыхЛицПартнеров</Name>
+		<Code>000000028</Code>
+		<Description>Настройка хранения фотогрфий контактых лиц партнеров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c8f93557-0976-4373-bf6e-daa470349269">
+		<Name>НеидентифицированныеСкидкиСайта</Name>
+		<Code>000000064</Code>
+		<Description>Неидентифицированные скидки сайта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="db04e316-f97a-4370-b71f-4b0f0a9f9299">
+		<Name>ОбработкаВЕРППриВзятииВРаботу</Name>
+		<Code>000000070</Code>
+		<Description>Обработка в ЕРП при взятии в работу</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b1ea51bb-aa8b-4c91-8ec2-2e93aae29f97">
+		<Name>БитриксURL</Name>
+		<Code>000000034</Code>
+		<Description>Основной URL Битрикс24 CRM</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="910f6634-a3f2-4567-8d05-58aa02dd6ba2">
+		<Name>ОтключитьПроверкиСКС</Name>
+		<Code>000000047</Code>
+		<Description>Отключить проверки СКС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a4fee53a-8273-404a-81b4-138939baff97">
+		<Name>ПодарочнаяАкцияПоУмолчанию</Name>
+		<Code>000000071</Code>
+		<Description>Подарочная акция по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ac41acfc-7825-4565-9b34-83a91017fa48">
+		<Name>ПолучитьОстаткиПоВидамСкладовКСИЗВнешнихСистем</Name>
+		<Code>000000072</Code>
+		<Description>Получить остатки по видам складов КС из внешних систем</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2459a53a-6500-4990-a070-ef8e02c8a30e">
+		<Name>ПомещениеПолучательРО</Name>
+		<Code>000000043</Code>
+		<Description>Помещение получатель (Расходный ордер на товары)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="de84b2a5-97aa-42e3-93d7-7d43aa80bcc2">
+		<Name>ПомещениеПоставщика</Name>
+		<Code>000000041</Code>
+		<Description>Помещение поставщика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8fa12cf4-f7fb-4ba5-b1aa-501c5723b8c9">
+		<Name>ПомещениеПоставщикаОклейкаУПоставщика</Name>
+		<Code>000000115</Code>
+		<Description>Помещение поставщика (оклейка у поставщика)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8a99fb2f-0f28-4652-9e95-4b4bfd61d0fe">
+		<Name>ПоставщикПоГТД</Name>
+		<Code>000000026</Code>
+		<Description>Поставщик по ГТД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="25f18d4a-561f-4aed-8511-99e07bbda12b">
+		<Name>ПредельнаяДлинаПоляКомментарийДляИнтереса</Name>
+		<Code>000000005</Code>
+		<Description>Предельная длина поля комментарий для интереса</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9a72bf5d-e7d9-41d0-b6cb-2da40b0586b5">
+		<Name>ПриоритетИнтересаПоУмолчанию</Name>
+		<Code>000000037</Code>
+		<Description>Приоритет интереса по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af480e9b-6011-49d8-9d00-df0dc3d19c47">
+		<Name>БитриксСистемаКонтура</Name>
+		<Code>000000035</Code>
+		<Description>Система интеграционного контура "Битрикс"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="77b854eb-583e-4cd0-bae2-0a5ffd82d574">
+		<Name>СкладПолучательРО</Name>
+		<Code>000000042</Code>
+		<Description>Склад получатель (Расходный ордер на товары)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="24c6d5f4-8a9b-454f-9332-7b3f4fa3ff39">
+		<Name>СКСДляДУИВС</Name>
+		<Code>000000046</Code>
+		<Description>СКС для ДУИВС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6939f676-da0b-42c9-8cce-977adc914a46">
+		<Name>СтрокаПодключенияКБазеУНИКУМ</Name>
+		<Code>000000091</Code>
+		<Description>Строка подключения к базе УНИКУМ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d1e3ad3b-9e7d-4e19-8a28-fae4c84320e2">
+		<Name>СценарийПродажДляТочекВыдачи</Name>
+		<Code>000000049</Code>
+		<Description>Сценарий продаж для точек выдачи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cf807408-caf1-46c9-a366-ceff32e1f63c">
+		<Name>ТехническийМенеджерСКС</Name>
+		<Code>000000045</Code>
+		<Description>Технический менеджер СКС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f7103029-54c0-4b2f-b319-6b954d8a1308">
+		<Name>СканыСправок2ЕГАИС</Name>
+		<Code>000000003</Code>
+		<Description>Тип бинарного объекта для сканов Справка2ЕГАИС</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d46642e2-928f-4d2a-89c5-8c6a33b3a407">
+		<Name>ТипТорговойТочкиРозничнойПродажи</Name>
+		<Code>000000067</Code>
+		<Description>Тип торговой точки розничной продажи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a5ba8f0e-c984-4b62-92a8-d16614982233">
+		<Name>ТочкаВыдачиНеЗаполнена</Name>
+		<Code>000000069</Code>
+		<Description>Точка выдачи не заполнена</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0fdec4a4-9cf9-44ef-885d-e294d654f2f8">
+		<Name>ТранспортноеСредствоПоУмолчанию</Name>
+		<Code>000000036</Code>
+		<Description>Транспортное средство</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2b65235c-a0eb-4120-9a75-cf819c063b50">
+		<Name>ФотогрфияКонтактногоЛицаПоУмолчанию</Name>
+		<Code>000000029</Code>
+		<Description>Фотогрфия контактного лица по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

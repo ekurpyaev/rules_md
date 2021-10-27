@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://esb.axelot.ru"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="http://esb.axelot.ru"
+		xmlns:xsd2="http://schemas.microsoft.com/2003/10/Serialization/"
+		xmlns:xsd3="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+		name="service"
+		targetNamespace="http://esb.axelot.ru">
+	<types>
+		<xs:schema xmlns:i0="http://tempuri.org/"
+				xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+				xmlns:ns1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+				xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+				xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+				xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+				xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+				xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+				xmlns:xsd2="http://esb.axelot.ru"
+				xmlns:xsd3="http://schemas.microsoft.com/2003/10/Serialization/"
+				elementFormDefault="qualified"
+				targetNamespace="http://esb.axelot.ru">
+			<xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+			<xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+			<xs:element name="SendMessage">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element xmlns:q1="http://esb.axelot.ru"
+								minOccurs="0"
+								name="message"
+								nillable="true"
+								type="q1:Message"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="Message">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							name="Body"
+							nillable="true"
+							type="xs:string">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element minOccurs="0"
+							name="ClassId"
+							nillable="true"
+							type="xs:string">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element minOccurs="0"
+							name="CorrelationId"
+							nillable="true"
+							type="xsd3:guid"/>
+					<xs:element minOccurs="0"
+							name="CreationTime"
+							type="xs:dateTime">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Id"
+							type="xsd3:guid"/>
+					<xs:element minOccurs="0"
+							name="NeedAcknowledgment"
+							type="xs:boolean">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q2="http://esb.axelot.ru"
+							minOccurs="0"
+							name="Properties"
+							nillable="true"
+							type="q2:ArrayOfMessageProperty">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="Receivers"
+							nillable="true"
+							type="q3:ArrayOfstring">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element minOccurs="0"
+							name="ReplyTo"
+							nillable="true"
+							type="xs:string">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element minOccurs="0"
+							name="Source"
+							nillable="true"
+							type="xs:string">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Type"
+							nillable="true"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element xmlns:q4="http://esb.axelot.ru"
+					name="Message"
+					nillable="true"
+					type="q4:Message"/>
+			<xs:complexType name="ArrayOfMessageProperty">
+				<xs:sequence>
+					<xs:element xmlns:q5="http://esb.axelot.ru"
+							minOccurs="0"
+							maxOccurs="unbounded"
+							name="MessageProperty"
+							nillable="true"
+							type="q5:MessageProperty"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element xmlns:q6="http://esb.axelot.ru"
+					name="ArrayOfMessageProperty"
+					nillable="true"
+					type="q6:ArrayOfMessageProperty"/>
+			<xs:complexType name="MessageProperty">
+				<xs:sequence>
+					<xs:element name="Name"
+							nillable="true"
+							type="xs:string"/>
+					<xs:element xmlns:q7="http://esb.axelot.ru"
+							name="Value"
+							nillable="true"
+							type="q7:Variant"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element xmlns:q8="http://esb.axelot.ru"
+					name="MessageProperty"
+					nillable="true"
+					type="q8:MessageProperty"/>
+			<xs:complexType name="Variant">
+				<xs:sequence>
+					<xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="BooleanValues"
+							nillable="true"
+							type="q9:ArrayOfboolean">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element minOccurs="0"
+							name="ByteValues"
+							nillable="true"
+							type="xs:base64Binary">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="DoubleValues"
+							nillable="true"
+							type="q10:ArrayOfdouble">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="FloatValues"
+							nillable="true"
+							type="q11:ArrayOffloat">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="IntegerValues"
+							nillable="true"
+							type="q12:ArrayOfint">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="LongIntegerValues"
+							nillable="true"
+							type="q13:ArrayOflong">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="StringValues"
+							nillable="true"
+							type="q14:ArrayOfstring">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+					<xs:element xmlns:q15="http://esb.axelot.ru"
+							minOccurs="0"
+							name="Type"
+							type="q15:VariantType"/>
+					<xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+							minOccurs="0"
+							name="UnsignedIntegerValues"
+							nillable="true"
+							type="q16:ArrayOfunsignedInt">
+						<xs:annotation>
+							<xs:appinfo>
+								<DefaultValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/"
+										EmitDefaultValue="false"/>
+							</xs:appinfo>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element xmlns:q17="http://esb.axelot.ru"
+					name="Variant"
+					nillable="true"
+					type="q17:Variant"/>
+			<xs:simpleType name="VariantType">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="String"/>
+					<xs:enumeration value="Byte"/>
+					<xs:enumeration value="Integer"/>
+					<xs:enumeration value="UnsignedInteger"/>
+					<xs:enumeration value="Float"/>
+					<xs:enumeration value="Double"/>
+					<xs:enumeration value="Boolean"/>
+					<xs:enumeration value="StringArray"/>
+					<xs:enumeration value="ByteArray"/>
+					<xs:enumeration value="IntegerArray"/>
+					<xs:enumeration value="UnsignedIntegerArray"/>
+					<xs:enumeration value="FloatArray"/>
+					<xs:enumeration value="DoubleArray"/>
+					<xs:enumeration value="BooleanArray"/>
+					<xs:enumeration value="Null"/>
+					<xs:enumeration value="Auto"/>
+					<xs:enumeration value="LongInteger"/>
+					<xs:enumeration value="LongIntegerArray"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:element xmlns:q18="http://esb.axelot.ru"
+					name="VariantType"
+					nillable="true"
+					type="q18:VariantType"/>
+			<xs:element name="SendMessageResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								name="SendMessageResult"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SendMessageBatch">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element xmlns:q19="http://esb.axelot.ru"
+								minOccurs="0"
+								name="messages"
+								nillable="true"
+								type="q19:Messages"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:complexType name="Messages">
+				<xs:sequence>
+					<xs:element xmlns:q20="http://esb.axelot.ru"
+							minOccurs="0"
+							maxOccurs="unbounded"
+							name="Message"
+							nillable="true"
+							type="q20:Message"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element xmlns:q21="http://esb.axelot.ru"
+					name="Messages"
+					nillable="true"
+					type="q21:Messages"/>
+			<xs:element name="SendMessageBatchResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+								name="SendMessageBatchResult"
+								type="xs:int"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ExecuteRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element xmlns:q22="http://esb.axelot.ru"
+								minOccurs="0"
+								name="requestMessage"
+								nillable="true"
+								type="q22:Message"/>
+						<xs:element minOccurs="0"
+								name="timeoutSec"
+								type="xs:int"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ExecuteRequestResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element xmlns:q23="http://esb.axelot.ru"
+								minOccurs="0"
+								name="ExecuteRequestResult"
+								nillable="true"
+								type="q23:Message"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+		<xs:schema xmlns:i0="http://tempuri.org/"
+				xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/"
+				xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+				xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+				xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+				xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+				xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+				xmlns:xsd2="http://esb.axelot.ru"
+				xmlns:xsd3="http://schemas.microsoft.com/2003/10/Serialization/"
+				attributeFormDefault="qualified"
+				elementFormDefault="qualified"
+				targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+			<xs:element name="anyType"
+					nillable="true"
+					type="xs:anyType"/>
+			<xs:element name="anyURI"
+					nillable="true"
+					type="xs:anyURI"/>
+			<xs:element name="base64Binary"
+					nillable="true"
+					type="xs:base64Binary"/>
+			<xs:element name="boolean"
+					nillable="true"
+					type="xs:boolean"/>
+			<xs:element name="byte"
+					nillable="true"
+					type="xs:byte"/>
+			<xs:element name="dateTime"
+					nillable="true"
+					type="xs:dateTime"/>
+			<xs:element name="decimal"
+					nillable="true"
+					type="xs:decimal"/>
+			<xs:element name="double"
+					nillable="true"
+					type="xs:double"/>
+			<xs:element name="float"
+					nillable="true"
+					type="xs:float"/>
+			<xs:element name="int"
+					nillable="true"
+					type="xs:int"/>
+			<xs:element name="long"
+					nillable="true"
+					type="xs:long"/>
+			<xs:element name="QName"
+					nillable="true"
+					type="xs:QName"/>
+			<xs:element name="short"
+					nillable="true"
+					type="xs:short"/>
+			<xs:element name="string"
+					nillable="true"
+					type="xs:string"/>
+			<xs:element name="unsignedByte"
+					nillable="true"
+					type="xs:unsignedByte"/>
+			<xs:element name="unsignedInt"
+					nillable="true"
+					type="xs:unsignedInt"/>
+			<xs:element name="unsignedLong"
+					nillable="true"
+					type="xs:unsignedLong"/>
+			<xs:element name="unsignedShort"
+					nillable="true"
+					type="xs:unsignedShort"/>
+			<xs:element name="char"
+					nillable="true"
+					type="xsd3:char"/>
+			<xs:simpleType name="char">
+				<xs:restriction base="xs:int"/>
+			</xs:simpleType>
+			<xs:element name="duration"
+					nillable="true"
+					type="xsd3:duration"/>
+			<xs:simpleType name="duration">
+				<xs:restriction base="xs:duration">
+					<xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+					<xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+					<xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:element name="guid"
+					nillable="true"
+					type="xsd3:guid"/>
+			<xs:simpleType name="guid">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:attribute name="FactoryType"
+					type="xs:QName"/>
+			<xs:attribute name="Id"
+					type="xs:ID"/>
+			<xs:attribute name="Ref"
+					type="xs:IDREF"/>
+		</xs:schema>
+		<xs:schema xmlns:i0="http://tempuri.org/"
+				xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+				xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+				xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+				xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+				xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
+				xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+				xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+				xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+				xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"
+				xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+				xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+				xmlns:xsd2="http://esb.axelot.ru"
+				xmlns:xsd3="http://schemas.microsoft.com/2003/10/Serialization/"
+				elementFormDefault="qualified"
+				targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<xs:complexType name="ArrayOfboolean">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="boolean"
+							type="xs:boolean"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfboolean"
+					nillable="true"
+					type="xsd1:ArrayOfboolean"/>
+			<xs:complexType name="ArrayOfdouble">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="double"
+							type="xs:double"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfdouble"
+					nillable="true"
+					type="xsd1:ArrayOfdouble"/>
+			<xs:complexType name="ArrayOffloat">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="float"
+							type="xs:float"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOffloat"
+					nillable="true"
+					type="xsd1:ArrayOffloat"/>
+			<xs:complexType name="ArrayOfint">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="int"
+							type="xs:int"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfint"
+					nillable="true"
+					type="xsd1:ArrayOfint"/>
+			<xs:complexType name="ArrayOflong">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="long"
+							type="xs:long"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOflong"
+					nillable="true"
+					type="xsd1:ArrayOflong"/>
+			<xs:complexType name="ArrayOfstring">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="string"
+							nillable="true"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfstring"
+					nillable="true"
+					type="xsd1:ArrayOfstring"/>
+			<xs:complexType name="ArrayOfunsignedInt">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+							maxOccurs="unbounded"
+							name="unsignedInt"
+							type="xs:unsignedInt"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfunsignedInt"
+					nillable="true"
+					type="xsd1:ArrayOfunsignedInt"/>
+		</xs:schema>
+	</types>
+	<message name="service_SendMessage_InputMessage">
+		<part name="parameters"
+				element="tns:SendMessage"/>
+	</message>
+	<message name="service_SendMessage_OutputMessage">
+		<part name="parameters"
+				element="tns:SendMessageResponse"/>
+	</message>
+	<message name="service_SendMessageBatch_InputMessage">
+		<part name="parameters"
+				element="tns:SendMessageBatch"/>
+	</message>
+	<message name="service_SendMessageBatch_OutputMessage">
+		<part name="parameters"
+				element="tns:SendMessageBatchResponse"/>
+	</message>
+	<message name="service_ExecuteRequest_InputMessage">
+		<part name="parameters"
+				element="tns:ExecuteRequest"/>
+	</message>
+	<message name="service_ExecuteRequest_OutputMessage">
+		<part name="parameters"
+				element="tns:ExecuteRequestResponse"/>
+	</message>
+	<portType name="service">
+		<operation name="SendMessage">
+			<input name="SendMessageRequest"
+					message="tns:service_SendMessage_InputMessage"/>
+			<output name="SendMessageResponse"
+					message="tns:service_SendMessage_OutputMessage"/>
+		</operation>
+		<operation name="SendMessageBatch">
+			<input name="SendMessageBatchRequest"
+					message="tns:service_SendMessageBatch_InputMessage"/>
+			<output name="SendMessageBatchResponse"
+					message="tns:service_SendMessageBatch_OutputMessage"/>
+		</operation>
+		<operation name="ExecuteRequest">
+			<input name="ExecuteRequestRequest"
+					message="tns:service_ExecuteRequest_InputMessage"/>
+			<output name="ExecuteRequestResponse"
+					message="tns:service_ExecuteRequest_OutputMessage"/>
+		</operation>
+	</portType>
+	<binding name="basicHttp_service"
+			type="tns:service">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="SendMessage">
+			<soapbind:operation style="document"
+					soapAction="http://esb.axelot.ru/service/SendMessage"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SendMessageBatch">
+			<soapbind:operation style="document"
+					soapAction="http://esb.axelot.ru/service/SendMessageBatch"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExecuteRequest">
+			<soapbind:operation style="document"
+					soapAction="http://esb.axelot.ru/service/ExecuteRequest"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="service">
+		<port name="basicHttp_service"
+				binding="tns:basicHttp_service">
+			<soapbind:address location="http://localhost:8090/adapters/soapserver/send"/>
+		</port>
+	</service>
+</definitions>

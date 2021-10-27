@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<HTTPService uuid="4ea90b9f-510c-4b1c-bbdc-bc3dc91772fd">
+		<Properties>
+			<Name>ESBExchange</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ESBExchange</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>ESBExchange</RootURL>
+			<ReuseSessions>DontUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="08a44142-777b-48af-a21a-88f69d77e2ca">
+				<Properties>
+					<Name>PushArrayOfMessage</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Push array of message</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/ArrayOfMessage</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b96f8a2b-10e5-47bd-a333-10dbbc857d43">
+						<Properties>
+							<Name>PUT</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>PUT</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PUT</HTTPMethod>
+							<Handler>PushArrayOfMessagePUT</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="2101aee1-2a58-4705-a519-df98cc2dabc9">
+				<Properties>
+					<Name>PushMessage</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Push message</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/PushMessage</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="2b8cacf6-9486-48c6-aaf0-69963afbad41">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>PushMessagePOST</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="775e2f24-560c-474d-81dd-943dab0a0a9b">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>PushMessageGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="ce36ecc2-5377-4891-989c-ffcefa33378c">
+				<Properties>
+					<Name>PushMessageBatch</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Push message batch</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/PushMessageBatch</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="cf3d0a10-826b-414f-8082-130c6bf6a3c0">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>PushMessageBatchGET</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="82aca5a7-5fd1-457d-9232-dc4d1382a82d">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>PushMessageBatchPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="68c1720a-30c9-4c8f-a957-64215813fe58">
+				<Properties>
+					<Name>SendMessage</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Send message</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/SendMessage</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="c07c6ba8-7e47-4924-b14b-31c852e8a061">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>PushMessagePOST</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="4b8da72c-3903-44c7-b163-69e624052701">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>PushMessageGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="a4bc99f7-f17d-45fa-b63b-f4da27997927">
+				<Properties>
+					<Name>SendMessageBatch</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Send message batch</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/SendMessageBatch</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b792c429-3546-4e3e-b8b6-81c436f3876a">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>PushMessageBatchGET</Handler>
+						</Properties>
+					</Method>
+					<Method uuid="01a421d6-a7ad-448f-9df8-aa2d700f237d">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>PushMessageBatchPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="1386377f-d2ae-43b2-ac9a-c299541b16af">
+		<Properties>
+			<Name>СШП</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Datareon</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.сшпКартинкаПодсистемы16х16</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.сшпКартинкаПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.сшпФормаКонстант</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.сшпАдминистратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.сшпОбменСESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.сшпСостояниеСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.сшпРепозиторийОбъектовИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпФорматыСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпТипыИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпСтатусыСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпТипыКоннекторовESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпФорматДляСериализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпОтключитьПотокиОбработкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпФорматСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпИмяТочкиПодключенияESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпИмяСервисаESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпДлительностьХраненияСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпМаксимальноеКоличествоПотоковОбработкиВходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпМаксимальноеКоличествоПотоковОбработкиИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпТипИспользуемогоКоннектораESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпИспользоватьСШП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпАдресАдаптераESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.ESBExchange</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.ESBExchange</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.ESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MSSerArr</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MSSer</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпИспользоватьСШП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.сшпОбменРегистрыРасчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.сшпОбменСсылочныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпРаботаСДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпОбслуживаниеОчередей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпОбработкаСобытий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпSOAPСервис</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпКэшируемыеФункции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпФункцииРаботыXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпФункцииРаботыFastInfoset</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпФункцииРаботыJSON</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпHTTPСервис</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпДлительностьОжидания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.сшпБлокировкаОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпВерсияОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпВерсияОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпОтключитьПотоки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпФорматСериализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпФункциональныеОпции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпАдресАдаптераESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпИмяСервисаESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпИмяТочкиПодключенияESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпТипИспользуемогоКоннектораESB</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпСтатусыОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.сшпСтатусыОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпОбновлениеВерсииКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпФорматСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпИдентификаторИБ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпВзаимодействиеСАдаптером</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпСистемныеСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпМетодХранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпТипыОчередей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпАвтоматическийСтартОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпАвтоматическийСтартОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпРазмерПакета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпРежимПередачиСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.сшпРежимыПередачиСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.сшпЗапуститьПотоки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпДлительностьХраненияСообщенийПоОчередямИСостояниям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпВерсияПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WSReference.ESBAdapter</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.сшпОбменСсылочныеДанныеПередУдалением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпОтладкаОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.сшпКартинкаПодсистемы16х16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.сшпОбменРегистры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпОтключитьПотокОбработкиОчередиИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпОтключитьПотокОбработкиОчередиИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.сшпКартинкаПодсистемы32х32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпИмяАдаптера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпИДАдаптера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпВерсияПараметровПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпВерсияПараметровПодсистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпPipe</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.сшпКомпонентаWin64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.сшпЗапускОбработкиЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпРаботаСКонстантами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.сшпКомпонентаWin86</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпTcp</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпКоличествоНеудачныхПопытокTcp</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпКлючTcp</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпПортTcpСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпАдресTcpСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.сшпОчередьИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.сшпКомпонентаLinux64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпОтключитьСоединение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.сшпОтключитьСоединение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпПользовательскиеМетоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпДатаПолученияНастроек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпОбщегоНазначенияОбычноеПриложение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпАдресаМенеджеровУзлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.сшпСервер1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.сшпВызовСервера</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>грИнтеграция</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

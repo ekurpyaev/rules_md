@@ -1,0 +1,110 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://esb.axelot.ru">
+	<import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+	<import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="ArrayOfMessage1C" type="d2p1:ArrayOfMessage1C" nillable="true"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="ArrayOfMessageProperty" type="d2p1:ArrayOfMessageProperty" nillable="true"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="Message1C" type="d2p1:Message1C" nillable="true" form="Element"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="MessageProperty" type="d2p1:MessageProperty" nillable="true"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="SendMessage" type="d2p1:SendMessage"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="SendMessageBatch" type="d2p1:SendMessageBatch"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="SendMessageBatchResponse" type="d2p1:SendMessageBatchResponse"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="SendMessageResponse" type="d2p1:SendMessageResponse"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="Variant" type="d2p1:Variant" nillable="true"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="VariantType" type="d2p1:VariantType" nillable="true"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="Messages" type="d2p1:Messages" nillable="true"/>
+	<property xmlns:d2p1="http://esb.axelot.ru" name="Message" type="d2p1:Message" nillable="true" form="Element"/>
+	<valueType name="VariantType" base="xs:string" variety="Atomic">
+		<enumeration>String</enumeration>
+		<enumeration>Byte</enumeration>
+		<enumeration>Integer</enumeration>
+		<enumeration>UnsignedInteger</enumeration>
+		<enumeration>Float</enumeration>
+		<enumeration>Double</enumeration>
+		<enumeration>Boolean</enumeration>
+		<enumeration>StringArray</enumeration>
+		<enumeration>ByteArray</enumeration>
+		<enumeration>IntegerArray</enumeration>
+		<enumeration>UnsignedIntegerArray</enumeration>
+		<enumeration>FloatArray</enumeration>
+		<enumeration>DoubleArray</enumeration>
+		<enumeration>BooleanArray</enumeration>
+		<enumeration>Null</enumeration>
+		<enumeration>Auto</enumeration>
+		<enumeration>LongInteger</enumeration>
+		<enumeration>LongIntegerArray</enumeration>
+	</valueType>
+	<objectType name="ArrayOfMessage1C">
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Message1C" type="d3p1:Message1C" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfMessageProperty" ordered="false">
+		<property xmlns:d3p1="http://esb.axelot.ru" name="MessageProperty" type="d3p1:MessageProperty" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Message1C">
+		<property name="Body" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="ClassId" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CreationTime" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/" name="Id" type="d3p1:guid"/>
+		<property name="NeedAcknowledgment" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Properties" type="d3p1:ArrayOfMessageProperty" lowerBound="0" nillable="true"/>
+		<property name="Receiver" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ReplyTo" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Source" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Type" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="MessageProperty">
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Value" type="d3p1:Variant" nillable="true"/>
+	</objectType>
+	<objectType name="SendMessage">
+		<property xmlns:d3p1="http://esb.axelot.ru" name="message" type="d3p1:Message1C" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="SendMessageBatch">
+		<property xmlns:d3p1="http://esb.axelot.ru" name="messages" type="d3p1:ArrayOfMessage1C" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="SendMessageBatchResponse">
+		<property name="SendMessageBatchResult" type="xs:int" lowerBound="0"/>
+	</objectType>
+	<objectType name="SendMessageResponse">
+		<property name="SendMessageResult" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="Variant">
+		<property name="BooleanValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="ByteValues" type="xs:base64Binary" lowerBound="0" nillable="true"/>
+		<property name="DoubleValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="FloatValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="IntegerValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="LongIntegerValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="StringValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Type" type="d3p1:VariantType" lowerBound="0"/>
+		<property name="UnsignedIntegerValues" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="TemplateUpdateMessage">
+		<property name="Id" type="xs:string" lowerBound="1" nillable="false" fixed="false" form="Element"/>
+		<property name="Version" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Integration" type="xs:string"/>
+		<property name="ObjectClass" type="xs:string"/>
+		<property name="KeepObjectLink" type="xs:boolean" nillable="true"/>
+		<property name="IsStarted" type="xs:boolean" nillable="false"/>
+		<property name="Code" type="xs:string"/>
+	</objectType>
+	<objectType name="Message">
+		<property name="Body" type="xs:string" lowerBound="0" nillable="true" form="Element"/>
+		<property name="ClassId" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CreationTime" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/" name="Id" type="d3p1:guid"/>
+		<property name="NeedAcknowledgment" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Properties" type="d3p1:ArrayOfMessageProperty" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Receivers" type="d3p1:Receivers" lowerBound="0" nillable="true"/>
+		<property name="ReplyTo" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Source" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Type" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/" name="CorrelationId" type="d3p1:guid" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="Messages">
+		<property xmlns:d3p1="http://esb.axelot.ru" name="Message" type="d3p1:Message" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Receivers">
+		<property name="Receiver" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>

@@ -1,0 +1,31 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+	<import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOfboolean" type="d2p1:ArrayOfboolean" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOfchar" type="d2p1:ArrayOfchar" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOfdouble" type="d2p1:ArrayOfdouble" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOffloat" type="d2p1:ArrayOffloat" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOfint" type="d2p1:ArrayOfint" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOfstring" type="d2p1:ArrayOfstring" nillable="true"/>
+	<property xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ArrayOfunsignedInt" type="d2p1:ArrayOfunsignedInt" nillable="true"/>
+	<objectType name="ArrayOfboolean">
+		<property name="boolean" type="xs:boolean" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfchar">
+		<property name="char" type="xs:anyType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfdouble">
+		<property name="double" type="xs:double" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOffloat">
+		<property name="float" type="xs:float" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfint">
+		<property name="int" type="xs:int" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfstring">
+		<property name="string" type="xs:string" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ArrayOfunsignedInt">
+		<property name="unsignedInt" type="xs:unsignedInt" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>

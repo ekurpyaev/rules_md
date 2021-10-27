@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="10">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<LabelField name="ИмяКлассаОбъекта" id="1">
+					<DataPath>Запись.ИмяКлассаОбъекта</DataPath>
+					<ContextMenu name="ИмяКлассаОбъектаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ИмяКлассаОбъектаРасширеннаяПодсказка" id="3"/>
+				</LabelField>
+				<LabelField name="ТипИнтеграции" id="4">
+					<DataPath>Запись.ТипИнтеграции</DataPath>
+					<ContextMenu name="ТипИнтеграцииКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ТипИнтеграцииРасширеннаяПодсказка" id="6"/>
+				</LabelField>
+				<CheckBoxField name="Отключен" id="15">
+					<Visible>false</Visible>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтключенКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ОтключенРасширеннаяПодсказка" id="17"/>
+				</CheckBoxField>
+				<LabelField name="Версия" id="12">
+					<DataPath>Запись.Версия</DataPath>
+					<ContextMenu name="ВерсияКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="14"/>
+				</LabelField>
+				<LabelField name="ВерсияПеременных" id="29">
+					<DataPath>Запись.ВерсияПеременных</DataPath>
+					<ContextMenu name="ВерсияПеременныхКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ВерсияПеременныхРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="21">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="МетодХранения" id="26">
+					<DataPath>Запись.МетодХранения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="МетодХраненияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="МетодХраненияРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="Статус" id="18">
+					<DataPath>Статус</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СтатусКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="20"/>
+				</InputField>
+				<LabelField name="ДатаИзменения" id="23">
+					<DataPath>ДатаИзменения</DataPath>
+					<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<TextDocumentField name="ТекстОбработки" id="7">
+			<DataPath>Запись.ПроцедураОбработки</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ТекстОбработкиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТекстОбработкиРасширеннаяПодсказка" id="9"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.сшпРепозиторийОбъектовИнтеграции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Статус" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.сшпСтатусыОбработчиков</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаИзменения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>МетодХранения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>МетодХраненияРасширеннаяПодсказка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Запись.ТипИнтеграции</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.сшпТипыИнтеграции.Исходящая</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>
