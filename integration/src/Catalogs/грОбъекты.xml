@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<Catalog uuid="877a908b-5a4d-4464-9ee8-4acdd59c30d0">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.грОбъекты" category="Object">
@@ -290,6 +290,7 @@
 						<xr:KeyField>0:bd55fd03-cf67-4333-a554-98e03d18f780</xr:KeyField>
 						<xr:TypesFilterField>-8</xr:TypesFilterField>
 						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">7a576bbd-3683-4c69-8259-b03d2c59db04.4398356a-2c59-4fe9-8bb8-56d0bf8b4280</xr:TypesFilterValue>
+						<xr:DataPathField>-1</xr:DataPathField>
 					</xr:CharacteristicTypes>
 					<xr:CharacteristicValues from="Catalog.грОбъекты.TabularSection.ДополнительныеРеквизиты">
 						<xr:ObjectField>Catalog.грОбъекты.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</xr:ObjectField>
@@ -302,6 +303,7 @@
 						<xr:KeyField>0:00949768-5833-4fe2-8752-b009d1bceef8</xr:KeyField>
 						<xr:TypesFilterField>-8</xr:TypesFilterField>
 						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">7a576bbd-3683-4c69-8259-b03d2c59db04.4398356a-2c59-4fe9-8bb8-56d0bf8b4280</xr:TypesFilterValue>
+						<xr:DataPathField>-1</xr:DataPathField>
 					</xr:CharacteristicTypes>
 					<xr:CharacteristicValues from="">
 						<xr:ObjectField>0:cb954476-c551-4a06-9bcd-18d67ba47dc8</xr:ObjectField>

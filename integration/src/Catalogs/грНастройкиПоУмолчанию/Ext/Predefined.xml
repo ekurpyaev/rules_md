@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
 	<Item id="863a1094-a7bf-4157-a9c8-01180014c710">
 		<Name>ВидыЦен</Name>
 		<Code>000000018</Code>
@@ -104,6 +104,26 @@
 								<Name>ВидыПоказателяАРМПланированиеРНДРНД</Name>
 								<Code>000000102</Code>
 								<Description>Вид показателя АРМ (Планирование РНД - РНД)</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+						</ChildItems>
+					</Item>
+					<Item id="d058c91b-e55a-43a4-bc17-2fcc1a6ad619">
+						<Name>Сертификаты</Name>
+						<Code>000000130</Code>
+						<Description>Сертификаты</Description>
+						<IsFolder>true</IsFolder>
+						<ChildItems>
+							<Item id="3754630f-81d4-4be3-a4c0-36d0f06f4de0">
+								<Name>ВидПоказателяДляАРМ_План</Name>
+								<Code>000000131</Code>
+								<Description>Вид показателя для АРМ_план</Description>
+								<IsFolder>false</IsFolder>
+							</Item>
+							<Item id="32c52bf3-015f-48c5-bbcf-998016b99be7">
+								<Name>ВидПоказателяДляАРМ_Серия</Name>
+								<Code>000000132</Code>
+								<Description>Вид показателя для АРМ_серия</Description>
 								<IsFolder>false</IsFolder>
 							</Item>
 						</ChildItems>
@@ -238,6 +258,44 @@
 					</Item>
 				</ChildItems>
 			</Item>
+			<Item id="19778128-2e94-4b45-9708-2dfc0dfcc977">
+				<Name>ЗагрузкаЗПИзExcel</Name>
+				<Code>000000117</Code>
+				<Description>Загрузка заказа поставщику из excel</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="1a8251dd-0724-4c3f-8339-1bd69e759db6">
+						<Name>ЗагрузкаЗПИзExcelБанковскийСчет</Name>
+						<Code>000000119</Code>
+						<Description>Загрузка заказа поставщику из excel (Банковский счет)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="2c14405c-f2f6-4790-9a05-addf00d06750">
+						<Name>ЗагрузкаЗПИзExcelОрганизация</Name>
+						<Code>000000118</Code>
+						<Description>Загрузка заказа поставщику из excel (Организация)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="05c8cd91-e1a3-4606-b098-344819de02bb">
+						<Name>ЗагрузкаЗПИзExcelПомещениеПоставщика</Name>
+						<Code>000000122</Code>
+						<Description>Загрузка заказа поставщику из excel (Помещение поставщика)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="a33e4554-8aaf-4093-9cfb-91a03fe9e6e0">
+						<Name>ЗагрузкаЗПИзExcelПриоритет</Name>
+						<Code>000000120</Code>
+						<Description>Загрузка заказа поставщику из excel (Приоритет)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="26ee8f7b-1003-4c24-9db6-63d90babc159">
+						<Name>ЗагрузкаЗПИзExcelСкладПоставщика</Name>
+						<Code>000000121</Code>
+						<Description>Загрузка заказа поставщику из excel (Склад поставщика)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
 			<Item id="53ec05d9-49b0-4897-8fc9-80dd88d85500">
 				<Name>ИтогиСписков</Name>
 				<Code>000000112</Code>
@@ -278,6 +336,46 @@
 					</Item>
 				</ChildItems>
 			</Item>
+			<Item id="04539c07-0036-46eb-a1cb-3490b4fdc6da">
+				<Name>ПечатныеФормы</Name>
+				<Code>000000127</Code>
+				<Description>Печатные формы</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="63f0bcb2-32bf-4f78-b980-2a24a2d7c0c8">
+						<Name>ВидПоказателяДляПФ_ПоЗП_План</Name>
+						<Code>000000128</Code>
+						<Description>Вид показателя для ПФ по ЗП_план</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="94ad6ba1-d906-4257-afeb-e9c0a064de29">
+						<Name>ВидПоказателяДляПФ_ПоЗП_ф1А</Name>
+						<Code>000000129</Code>
+						<Description>Вид показателя для ПФ по ЗП_ф1А</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+			<Item id="460081aa-c381-4e88-aafd-c272f974830c">
+				<Name>СверкаВидовПоказателейЗП</Name>
+				<Code>000000123</Code>
+				<Description>Сверка видов показателей (Заказ поставщику)</Description>
+				<IsFolder>true</IsFolder>
+				<ChildItems>
+					<Item id="d42a2a62-8554-4c5a-b7c1-1d9d3b58eb90">
+						<Name>СверкаВидовПоказателейЗПДополнительный</Name>
+						<Code>000000125</Code>
+						<Description>Сверка видов показателей (Заказ поставщику - Дополнительный)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+					<Item id="4e6c0516-59f6-4938-82a8-a23d170e80dc">
+						<Name>СверкаВидовПоказателейЗПОсновной</Name>
+						<Code>000000124</Code>
+						<Description>Сверка видов показателей (Заказ поставщику - Основной)</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
 			<Item id="b3e64b4d-13a3-47cc-b42d-d2893c6d63e4">
 				<Name>ТоварнаяЛогистика</Name>
 				<Code>000000105</Code>
@@ -301,7 +399,7 @@
 			<Item id="15a7dccd-70c7-406f-8e51-00bc7ecae370">
 				<Name>ВидОперацииДляИнтерактивногоСозданияЗП</Name>
 				<Code>000000116</Code>
-				<Description>Вид операции для интерактивного создания ЗП</Description>
+				<Description>Вид операции для интерактивного создания (Заказ поставщику)</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 			<Item id="e9542fae-6ffb-4171-bf42-8adc13755606">
@@ -320,6 +418,12 @@
 				<Name>ИменаВладельцевУниверсальнойСтроки</Name>
 				<Code>000000104</Code>
 				<Description>Владельцы универсальной строки (Список полных имен объектов метаданных)</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2accadb7-0163-4693-8661-023b1eeafa61">
+				<Name>ПриоритетныйДляОтображенияВЗПВидПоказателя</Name>
+				<Code>000000126</Code>
+				<Description>Приоритетный для отображения в "Заказе поставщику" "Вид показателя"</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 		</ChildItems>
@@ -356,6 +460,12 @@
 		<Description>Учет АМ</Description>
 		<IsFolder>true</IsFolder>
 		<ChildItems>
+			<Item id="5c472736-3fab-480c-9e14-179380a27afd">
+				<Name>АлкогольнаяЛицензияДляПФ</Name>
+				<Code>000000137</Code>
+				<Description>Алкогольная лицензия для ПФ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
 			<Item id="5ab7c26a-8a5f-4218-b4b8-02f6951fb976">
 				<Name>БизнесПартнерОРАМ</Name>
 				<Code>000000053</Code>
@@ -378,6 +488,18 @@
 				<Name>ЕдиницаИзмеренияДляЦенообразования</Name>
 				<Code>000000031</Code>
 				<Description>Единица измерения для ценообразования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="57eb06b4-69b0-471d-9e75-b4b619226f21">
+				<Name>КаталогФайловРаспоряженияНаОклейку</Name>
+				<Code>000000135</Code>
+				<Description>Каталог файлов распоряжения на оклейку</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c3f24100-49ae-4d23-9103-c527d05c56e0">
+				<Name>КомиссияПоУничтожениюФСМ</Name>
+				<Code>000000136</Code>
+				<Description>Комиссия по уничтожению ФСМ</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 			<Item id="a5f7769c-fff5-4bee-ad47-9386f4ba6a06">
@@ -408,6 +530,12 @@
 				<Name>ПодключениеКХам</Name>
 				<Code>000000017</Code>
 				<Description>Подключение к ХАМ</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="83f72d19-48a4-498b-bda4-d3f36b312ff9">
+				<Name>ПодписантОтчетОбУничтоженииФСМ</Name>
+				<Code>000000138</Code>
+				<Description>Подписант в отчете об уничтожении ФСМ</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 			<Item id="23d32770-1904-4797-86fa-74c14236d0b6">
@@ -520,6 +648,12 @@
 		<Description>Бизнес-регион Москва</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="ae7eca79-d43a-4185-a24d-b6ddbb65debc">
+		<Name>БинарныйОбъектПустойПДФ</Name>
+		<Code>000000133</Code>
+		<Description>Бинарный объект "Пустой ПДФ"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="3162e5ea-f8b3-4d39-a106-59488e00b08f">
 		<Name>ВыполнятьРасчётЦенВоВнешнемПроцессинге</Name>
 		<Code>000000062</Code>
@@ -578,6 +712,12 @@
 		<Name>НастройкаХраненияФотогрфийКонтактыхЛицПартнеров</Name>
 		<Code>000000028</Code>
 		<Description>Настройка хранения фотогрфий контактых лиц партнеров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e0d9ca52-b25e-4530-84cc-4cd34df859d5">
+		<Name>НеИспользоватьОграниченияКПДляТочекВыдачи</Name>
+		<Code>000000134</Code>
+		<Description>Не использовать ограничения КП для точек выдачи</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 	<Item id="c8f93557-0976-4373-bf6e-daa470349269">

@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Page name="ГруппаОсновныеНастройки" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОсновныеНастройкиРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<CheckBoxField name="грESB_ИспользоватьВнутреннююОчередь" id="1">
+							<DataPath>КонстантыНабор.грESB_ИспользоватьВнутреннююОчередь</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="грESB_ИспользоватьВнутреннююОчередьКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="грESB_ИспользоватьВнутреннююОчередьРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">грESB_ИспользоватьВнутреннююОчередьПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="грESBМаксимальноеЧислоОткладыванияСообщенийв1С" id="4">
+							<DataPath>КонстантыНабор.грESBМаксимальноеЧислоОткладыванияСообщенийв1С</DataPath>
+							<MinValue xsi:type="xs:decimal">1</MinValue>
+							<ContextMenu name="грESBМаксимальноеЧислоОткладыванияСообщенийв1СКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="грESBМаксимальноеЧислоОткладыванияСообщенийв1СРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">грESBМаксимальноеЧислоОткладыванияСообщенийв1СПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="грESBДлительностьХраненияВходящихСообщений" id="7">
+							<DataPath>КонстантыНабор.грESBДлительностьХраненияВходящихСообщений</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длительность хранения входящих сообщений по умолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<MinValue xsi:type="xs:decimal">0</MinValue>
+							<ContextMenu name="грESBДлительностьХраненияВходящихСообщенийКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="грESBДлительностьХраненияВходящихСообщенийРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">грESBДлительностьХраненияВходящихСообщенийПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="ТаблицаДлительностиХранения" id="10">
+							<Representation>List</Representation>
+							<TitleLocation>Auto</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаДлительностиХранения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Длительность хранения входящих сообщений по статусам</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаДлительностиХраненияКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="ТаблицаДлительностиХраненияКоманднаяПанель" id="12"/>
+							<ExtendedTooltip name="ТаблицаДлительностиХраненияРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ТаблицаДлительностиХраненияСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>ТаблицаДлительностиХранения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДлительностиХраненияСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ТаблицаДлительностиХраненияСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаДлительностиХраненияСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>ТаблицаДлительностиХранения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДлительностиХраненияСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ТаблицаДлительностиХраненияСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаДлительностиХраненияУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>ТаблицаДлительностиХранения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДлительностиХраненияУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ТаблицаДлительностиХраненияУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeEditEnd">ТаблицаДлительностиХраненияПередОкончаниемРедактирования</Event>
+								<Event name="AfterDeleteRow">ТаблицаДлительностиХраненияПослеУдаления</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаДлительностиХраненияСтатусСообщения" id="23">
+									<DataPath>ТаблицаДлительностиХранения.СтатусСообщения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДлительностиХраненияСтатусСообщенияКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТаблицаДлительностиХраненияСтатусСообщенияРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТаблицаДлительностиХраненияДлительностьХранения" id="26">
+									<DataPath>ТаблицаДлительностиХранения.ДлительностьХранения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<ContextMenu name="ТаблицаДлительностиХраненияДлительностьХраненияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТаблицаДлительностиХраненияДлительностьХраненияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкиПотоковОбработки" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки потоков обработки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки потоков обработки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиПотоковОбработкиРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<InputField name="грESBКоличествоПотоковОбработкиОчередей" id="35">
+							<DataPath>КонстантыНабор.грESBКоличествоПотоковОбработкиОчередей</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество потоков обработки очередей</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="грESBКоличествоПотоковОбработкиОчередейКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="грESBКоличествоПотоковОбработкиОчередейРасширеннаяПодсказка" id="37"/>
+							<Events>
+								<Event name="OnChange">грESBКоличествоПотоковОбработкиОчередейПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="грESBКоличествоЗарезервированныхПотоковОбработкиОчередей" id="38">
+							<DataPath>КонстантыНабор.грESBКоличествоЗарезервированныхПотоковОбработкиОчередей</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество зарезервированных потоков обработки очередей</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="грESBКоличествоЗарезервированныхПотоковОбработкиОчередейКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="грESBКоличествоЗарезервированныхПотоковОбработкиОчередейРасширеннаяПодсказка" id="40"/>
+							<Events>
+								<Event name="OnChange">грESBКоличествоЗарезервированныхПотоковОбработкиОчередейПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="грESBКоличествоПотоковОбработкиПриоритетов" id="41">
+							<DataPath>КонстантыНабор.грESBКоличествоПотоковОбработкиПриоритетов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество потоков обработки приоритетов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="грESBКоличествоПотоковОбработкиПриоритетовКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="грESBКоличествоПотоковОбработкиПриоритетовРасширеннаяПодсказка" id="43"/>
+							<Events>
+								<Event name="OnChange">грESBКоличествоПотоковОбработкиПриоритетовПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="грESBКоличествоПотоковБалансировкиНагрузки" id="44">
+							<DataPath>КонстантыНабор.грESBКоличествоПотоковБалансировкиНагрузки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество потоков балансировки нагрузки</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="грESBКоличествоПотоковБалансировкиНагрузкиКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="грESBКоличествоПотоковБалансировкиНагрузкиРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">грESBКоличествоПотоковБалансировкиНагрузкиПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаДлительностиХранения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица длительности хранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="СтатусСообщения" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.сшпСтатусыСообщений</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДлительностьХранения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность хранения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КонстантыНабор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Константы набор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>
